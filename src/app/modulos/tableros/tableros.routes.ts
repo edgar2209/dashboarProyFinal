@@ -1,14 +1,14 @@
 import  { Routes, RouterModule} from  '@angular/router';
 import  { TablerosComponent} from  './tableros.component';
-import  { BarchartComponent} from  './barchart/barchart.component';
-import  { PiechartComponent} from  './piechart/piechart.component';
+import  { DashboardComponent} from  './dashboard/dashboard.component';
+import  { VentasComponent} from  './ventas/ventas.component';
 
 
 
 const routes: Routes = [ 
     {path: '',component: TablerosComponent},
-    {path: 'barchart',component: BarchartComponent},
-    {path: 'piechart',component: PiechartComponent}
+    {path: 'dashboard',component: DashboardComponent},
+    {path: 'ventas',component: VentasComponent}
 ]
 
 export const TablerosRoutingModule = RouterModule.forChild(routes);

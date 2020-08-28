@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TablerosComponent } from './tableros.component';
-import { BarchartComponent } from './barchart/barchart.component';
-import { PiechartComponent } from './piechart/piechart.component';
 import { TablerosRoutingModule } from './tableros.routes';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { VentasComponent } from './ventas/ventas.component';
 
 
 @NgModule({
-  declarations: [TablerosComponent, BarchartComponent, PiechartComponent],
+  declarations: [TablerosComponent, DashboardComponent, VentasComponent],
   imports: [
     CommonModule,
     TablerosRoutingModule

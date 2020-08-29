@@ -3,8 +3,6 @@ import  { TablerosComponent} from  './tableros.component';
 import  { DashboardComponent} from  './dashboard/dashboard.component';
 import  { VentasComponent} from  './ventas/ventas.component';
 
-
-
 const routes: Routes = [ 
     {path: '',component: TablerosComponent},
     {path: 'dashboard',component: DashboardComponent},

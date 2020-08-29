@@ -8,7 +8,7 @@ import { FooterComponent } from './components/navigation/footer/footer.component
 import { SidebarComponent } from './components/navigation/sidebar/sidebar.component';
 
 import {AppRoutingModule} from './app.routes';
-import { HeaderComponent } from './components/navigation/header/header.component'
+import { HeaderComponent } from './components/navigation/header/header.component';
 
 
 @NgModule({

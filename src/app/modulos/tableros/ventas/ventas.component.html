@@ -1,59 +1,7 @@
-<ng-select 
-           [items]="years$ | async"
-           [searchable]="true"
-           bindLabel="valor"
-           placeholder="Años"
-           [clearable]="true"
-           [multiple]="true"
-           (change)="year_OnChange($event)"
-           (clear)="dimesnsion_OnClear($event)"
-           [(ngModel)]="yearSelected">
-</ng-select>
+<app-selects [acumuladoVentas]="acumuladoVentas" [years$]="years$" [months$]="months$" [yearSelected]="yearSelected" 
+[monthSelected]="monthSelected" [ventasFiltradas$]="ventasFiltradas$" (onYearChangeRedirect)="year_OnChange($event)"
+(onMesChangeRedirect)="mes_OnChange($event)"></app-selects>
 
-<br>
-
-<ng-select [items]="months$ | async"
-           [searchable]="true"
-           bindLabel="valor"
-           placeholder="Meses"
-           [clearable]="true"
-           (change)="mes_OnChange($event)"
-           (clear)="dimesnsion_OnClear($event)"
-           [(ngModel)]="monthSelected">
-</ng-select>
-
-<div class="col-lg-6 col-md-6 col-sm-6">
-    <div class="card card-stats">
-      <div class="card-header card-header-success card-header-icon">
-        <div class="card-icon">
-          <i class="material-icons">timeline</i>
-        </div>
-        <p class="card-category">Acumulado Ventas</p>
-        <h3 class="card-title">${{acumuladoVentas}}</h3>
-      </div>
-      <div class="card-footer">
-        <div class="stats">
-          <i class="material-icons">account_balance</i>Ventas
-        </div>
-      </div>
-    </div>
-</div>
-
-<div class="col-lg-6 col-md-6 col-sm-6">
-  <div class="card card-stats">
-    <div class="card-header card-header-success card-header-icon">
-      <div class="card-icon">
-        <i class="material-icons">timeline</i>
-      </div>
-      <p class="card-category">Ventas Filtradas</p>
-      <h3 class="card-title">${{ventasFiltradas$ | async}}</h3>
-    </div>
-    <div class="card-footer">
-      <div class="stats">
-        <i class="material-icons">account_balance</i>Ventas
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- {{acumuladoVentas | json}} -->
+<app-selects [acumuladoVentas]="acumuladoVentas" [years$]="years$" [months$]="months$" [yearSelected]="yearSelected" 
+[monthSelected]="monthSelected" [ventasFiltradas$]="ventasFiltradas$" (onYearChangeRedirect)="year_OnChange($event)"
+(onMesChangeRedirect)="mes_OnChange($event)"></app-selects>
